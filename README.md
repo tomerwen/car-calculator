@@ -2,7 +2,7 @@ This is a project in order to get more familiar with AWS, DB, Docker and probabl
 
 Goals(4.4.2023):
     Car side:
-        *set up the code that will simulate the driving speed per 5 seconds
+        *set up the code that will simulate the driving speed per 2 seconds
         *set up connection to DB
 
     DB side:
