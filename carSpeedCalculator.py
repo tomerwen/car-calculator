@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 import random
 import time
-class car:
-    def __init__(self,running , number, owner, speed, km):
-        self.running = True
-        self.number = number
-        self.owner = owner
-        self.speed = speed
-        self.km = km
-        
-        
-Jaanukobil = car("yes","111-11-111", "Tomer Wendel", 0 , 0)
+import boto3
+import botocore
+from boto3.dynamodb.conditions import Key, Attr
+from botocore.exceptions import ClientError
+import car
+
+
+Jaanukobil = car.Car.add_car("yes","111-11-111", "Tomer Wendel", 0 , 0)
+Peachmobil = car.Car.add_car("yes",'222-22-222','Hodaya Cohen', 0,0)
 
 def speedcalculator(car):
     while(car.running!='no'):
@@ -27,4 +26,6 @@ def pushToDB(car):
     print("Nothing")
     
         
-speedcalculator(Jaanukobil)
+# speedcalculator(Jaanukobil)
+# speedcalculator(Peachmobil)
+
