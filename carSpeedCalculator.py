@@ -20,6 +20,7 @@ def speedcalculator(car):
         print(f'{car.number} milage is currently {car.km}km')
         car.running = input("Is the car still running?")
         time.sleep(2)
+    print(f'Thank you {car.owner} for riding with us, in this ride you\'ve drove for {car.km} kilometers')
         
         
 def pushToDB(car):
