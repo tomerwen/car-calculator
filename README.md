@@ -6,7 +6,7 @@ Goals(4.4.2023):
         *set up connection to DB
 
     DB side:
-        *   Car ID  |  Current speed  |  Total Distance Drove  |  Last Checkup milage
+        *Car ID  |  Current speed  |  Total Distance Drove  |  Last Checkup milage
 
     Website side:
         *create a script that will pull from DB and show time until required checkup(rangePerCheck-rangeSinceLastCheck)
